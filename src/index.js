@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import React                            from 'react';
 import {render}                         from 'react-dom';
 import {BrowserRouter, history}     from 'react-router-dom';
-import Routes                           from './Routes';
+import App                           from './components/App';
 import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -10,7 +10,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 render(
     <BrowserRouter>
-        <Routes />
+        <App />
     </BrowserRouter>,
     document.getElementById("app")
 );

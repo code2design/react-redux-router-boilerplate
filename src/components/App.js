@@ -1,13 +1,13 @@
 import React                       from 'react';
 import PropTypes                   from 'prop-types';
-
+import Routes                      from '../Routes';
 
 class App extends React.Component{
     render(){
         return(
             <div className="container-fluid">
                 <p>Header here...</p>
-                {this.props.children}
+                    <Routes />
                 <p>Foother here...</p>
             </div>
         );
